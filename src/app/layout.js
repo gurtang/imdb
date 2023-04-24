@@ -1,5 +1,6 @@
 import "./globals.css";
 import Header from "@/components/header";
+import Providers from "@/app/Providers";
 
 export const metadata = {
   title: "IMDB Clone",
@@ -10,12 +11,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/*Header*/}
-        <Header />
+        <Providers>
+          {/*Header*/}
+          <Header />
 
-        {/*Navbar*/}
-        {/*SearchBox*/}
-        {children}
+          {/*Navbar*/}
+          {/*SearchBox*/}
+          {children}
+        </Providers>
       </body>
     </html>
   );
