@@ -12,6 +12,7 @@ function SearchBox() {
     if (!search) return;
 
     router.push(`/search/${search}`);
+    setSearch("");
   }
 
   return (
